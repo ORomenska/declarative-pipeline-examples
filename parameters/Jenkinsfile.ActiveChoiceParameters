@@ -85,5 +85,10 @@ pipeline {
                     }
                 }
             }
-        }   
+        }
+        stage("foo") {
+            steps {
+                echo "${params.JOB}"
+            }
+        }
 }
